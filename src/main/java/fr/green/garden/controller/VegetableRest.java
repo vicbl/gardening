@@ -34,8 +34,7 @@ public class VegetableRest {
             @ApiResponse(code = 200, message = "Successfully fetched associations")
     })
     public List<Association> findAssociationsByVegetableAndGood(
-            @ApiParam(value = "The  vegetable id", required = true, example = "1") @PathVariable("vegetable_id") Long vegetableId
-    ) {
+            @ApiParam(value = "The  vegetable id", required = true, example = "1") @PathVariable("vegetable_id") Long vegetableId) {
         return vegetableService.findAssociationsByVegetableAndGood(vegetableId, true);
     }
 

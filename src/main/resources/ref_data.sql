@@ -71,4 +71,619 @@ VALUES (43, 42, 1),
        (43, 40, 0),
        (43, 33, 0),
        (43, 34, 0),
-       (43, 21, 0);
+       (43, 21, 0),
+
+
+       (21, 6, 1),
+       (21, 24, 1),
+       (21, 25, 1),
+       (21, 26, 1),
+       (21, 27, 1),
+       (21, 13, 0),
+
+
+       (2, 42, 1),
+       (2, 52, 1),
+       (2, 43, 0),
+       (2, 50, 0),
+       (2, 46, 0),
+       (2, 16, 0);
+
+
+
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'fraisier'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'carotte'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fève'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fève'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fève'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Asperge'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Concombre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Asperge'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'persil'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Asperge'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'poireau'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Asperge'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Asperge'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Aubergine'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Céleri'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'radis'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ciboulette'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'nain'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'poireau'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'radis'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Carotte'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Céleri'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Céleri'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Céleri'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Céleri'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'radis'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'maïs'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'persil'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'céleri'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'mâche'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'poireau'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'radis'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Concombre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Asperge'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Concombre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'céleri'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Concombre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Concombre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Concombre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'maïs'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Concombre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Concombre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pomme de terre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'radis'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pomme de terre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Courgette'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Courgette'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'maïs'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Courgette'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Échalote'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Échalote'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'fraisier'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Échalote'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Échalote'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fève'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fève'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Aubergine'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'carotte'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'céleri'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'concombre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'épinard'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'maïs'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'échalote'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'fenouil'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'radis'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'carotte'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou-fleur'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'concombre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Laitue'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'poireau'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Epinard'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'persil'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Epinard'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tournesol'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Epinard'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'maïs'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Oignon'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Oignon'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'carotte'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Oignon'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'fenouil'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Oignon'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Oignon'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'poireau'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Oignon'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'poireau'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'fève'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Fenouil'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Poireau'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Poireau'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'carotte'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Poireau'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'céleri'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Poireau'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'épinard'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Poireau'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Poireau'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Poireau'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Radis'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'carotte'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'céleri'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'concombre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'laitue'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'maïs'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'navet'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pois'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'échalote'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Ail'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'poireau'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pomme de terre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pomme de terre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pomme de terre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'céleri'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Pomme de terre'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'chou'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Aubergine'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'concombre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Aubergine'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Aubergine'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pommier'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Aubergine'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tomate'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Aubergine'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'tournesol'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Radis'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Radis'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Radis'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'betterave'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Radis'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Chou'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Tomate'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Asperge'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Tomate'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'carotte'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Tomate'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'céleri'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Tomate'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'maïs'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Tomate'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'oignon'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (TRUE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Tomate'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'radis'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'haricot'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pois'));
+INSERT INTO association (good, vegetable_id, associate_vegetable_id)
+VALUES (FALSE,
+        (SELECT v.id FROM vegetable v WHERE v.name = 'Betterave'),
+        (SELECT v.id FROM vegetable v WHERE v.name = 'pomme de terre'));

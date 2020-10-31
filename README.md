@@ -107,3 +107,6 @@ Racine
     Topinambour
 
  
+Generate sql query for association table
+
+https://docs.google.com/spreadsheets/d/1sdfx4H5G2Z9N5tJyYpfPsM41LFY-T4UCWN5qioakHVg/edit?usp=sharing

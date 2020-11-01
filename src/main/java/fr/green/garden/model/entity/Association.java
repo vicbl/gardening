@@ -20,11 +20,11 @@ public class Association {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "vegetable_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "fk__compatibility__vegetable_id"))
+    @JoinColumn(name = "vegetable_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "fk__association__vegetable_id"))
     private Vegetable vegetable;
 
     @OneToOne
-    @JoinColumn(name = "associate_vegetable_id", foreignKey = @ForeignKey(name = "fk__compatibility__friend_vegetable_id"))
+    @JoinColumn(name = "associate_vegetable_id", foreignKey = @ForeignKey(name = "fk__association__friend_vegetable_id"))
     private Vegetable associateVegetable;
 
     @Column(name = "good", nullable = false)
@@ -33,5 +33,19 @@ public class Association {
     public Association() {
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public Vegetable getVegetable() {
+        return vegetable;
+    }
+
+    public Vegetable getAssociateVegetable() {
+        return associateVegetable;
+    }
+
+    public boolean isGood() {
+        return good;
+    }
 }

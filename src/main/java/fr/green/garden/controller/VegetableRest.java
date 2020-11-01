@@ -28,7 +28,7 @@ public class VegetableRest {
         this.vegetableService = vegetableService;
     }
 
-    @GetMapping("{vegetable_id}/association")
+    @GetMapping("{vegetable_id}/associations")
     @ApiOperation(value = "Get the associations", response = Association.class, responseContainer = "set")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successfully fetched associations")

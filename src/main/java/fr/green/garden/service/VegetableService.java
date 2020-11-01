@@ -16,6 +16,6 @@ public class VegetableService {
     }
 
     public List<Association> findAssociationsByVegetableAndGood(Long vegetableId, boolean isGood) {
-        return associationRepository.findAssociationsByVegetableAndGood(vegetableId, isGood);
+        return associationRepository.findAssociationsByVegetableIdAndGood(vegetableId, isGood);
     }
 }
